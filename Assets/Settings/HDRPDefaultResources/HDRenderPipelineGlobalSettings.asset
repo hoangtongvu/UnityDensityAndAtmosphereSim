@@ -362,7 +362,7 @@ MonoBehaviour:
       type: {class: WaterSystemGlobalSettings, ns: UnityEngine.Rendering.HighDefinition, asm: Unity.RenderPipelines.HighDefinition.Runtime}
       data:
         m_Version: 1
-        m_EnableMaskAndCurrentWaterDecals: 0
+        m_EnableMaskAndCurrentWaterDecals: 1
     - rid: 5747374308318511108
       type: {class: CustomPostProcessOrdersSettings, ns: UnityEngine.Rendering.HighDefinition, asm: Unity.RenderPipelines.HighDefinition.Runtime}
       data:
