@@ -23,6 +23,16 @@
       "dependencies": {},
       "hash": "9b5989b98f668c7ef409b3c5a1d5192612703eb5"
     },
+    "com.github-joc0de.visual-studio-solution-generator": {
+      "version": "https://github.com/JoC0de/UnityVisualStudioSolutionGenerator.git?path=/src/UnityVisualStudioSolutionGenerator/Assets",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ide.visualstudio": "2.0.27",
+        "com.unity.settings-manager": "2.1.1"
+      },
+      "hash": "787fb1cb6b10910bf6b9195cb5dc4e0ed747e3ac"
+    },
     "com.laicasaane.xml-doc-generator": {
       "version": "https://github.com/laicasaane/UnityXmlDocGenerator.git?path=/Packages/com.laicasaane.xml-doc-generator#1.0.5",
       "depth": 0,
@@ -236,7 +246,7 @@
     },
     "com.unity.settings-manager": {
       "version": "2.1.1",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

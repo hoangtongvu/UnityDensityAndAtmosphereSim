@@ -3,6 +3,7 @@
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.darksun.entities.testing": "https://github.com/hoangtongvu/Entities.Testing.git",
     "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
+    "com.github-joc0de.visual-studio-solution-generator": "https://github.com/JoC0de/UnityVisualStudioSolutionGenerator.git?path=/src/UnityVisualStudioSolutionGenerator/Assets",
     "com.laicasaane.xml-doc-generator": "https://github.com/laicasaane/UnityXmlDocGenerator.git?path=/Packages/com.laicasaane.xml-doc-generator#1.0.5",
     "com.yasirkula.ingamedebugconsole": "https://github.com/yasirkula/UnityIngameDebugConsole.git",
     "today.comes.saintsfield": "https://github.com/TylerTemp/SaintsField.git",
