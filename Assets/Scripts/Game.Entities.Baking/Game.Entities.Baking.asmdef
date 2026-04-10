@@ -1,0 +1,30 @@
+{
+    "name": "Game.Entities.Baking",
+    "rootNamespace": "Game.Entities.Baking",
+    "references": [
+        "GUID:734d92eba21c94caba915361bd5ac177",
+        "GUID:8819f35a0fc84499b990e90a4ca1911f",
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:a5baed0c9693541a5bd947d336ec7659",
+        "GUID:4eaa0d7d6d142404c825a843831e9e16",
+        "GUID:a4bfce1eeefe2fa47a75118b4d330ef2",
+        "GUID:f5c8b77384a51574db77d5cda0a82e5b",
+        "GUID:1e406d9d8bb9731468ca543a1534aee8",
+        "GUID:dd47dbe78a7dd3e4599572ca656a2926",
+        "GUID:825328161c1c56d4290d7b03b55d4290",
+        "GUID:4aa2e764b8314744bb66397c28b63c91",
+        "GUID:dd4ade427245ed34b86dcb9db78bfaa5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

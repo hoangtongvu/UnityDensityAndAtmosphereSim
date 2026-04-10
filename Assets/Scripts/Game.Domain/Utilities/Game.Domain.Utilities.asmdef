@@ -1,0 +1,21 @@
+{
+    "name": "Game.Domain.Utilities",
+    "rootNamespace": "Game.Domain.Utilities",
+    "references": [
+        "GUID:734d92eba21c94caba915361bd5ac177",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:2665a8d13d1b3f18800f46e256720795",
+        "GUID:a4bfce1eeefe2fa47a75118b4d330ef2",
+        "GUID:4eaa0d7d6d142404c825a843831e9e16"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
