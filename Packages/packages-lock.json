@@ -337,6 +337,42 @@
       "dependencies": {},
       "hash": "1fdf390413bceec6588b218aa8b4fdecc98c02af"
     },
+    "com.zbase.collections.pooled": {
+      "version": "2.8.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "com.zbase.foundation": {
+      "version": "1.0.5",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "com.zbase.foundation.pubsub": {
+      "version": "file:ZBase.Foundation.PubSub",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0",
+        "com.cysharp.unitask": "2.3.3",
+        "com.zbase.collections.pooled": "2.8.4",
+        "com.zbase.foundation": "1.0.5"
+      }
+    },
+    "org.nuget.system.runtime.compilerservices.unsafe": {
+      "version": "6.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "today.comes.saintsfield": {
       "version": "https://github.com/TylerTemp/SaintsField.git",
       "depth": 0,
