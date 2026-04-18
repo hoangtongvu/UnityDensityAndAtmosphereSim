@@ -10,6 +10,11 @@ namespace Game.ScriptableObjects
     {
         public SaintsDictionary<int, InspectingObjectData> Value;
 
+        private void OnValidate()
+        {
+            this.InitValues();
+        }
+
         [ContextMenu("Init Values")]
         public void InitValues()
         {

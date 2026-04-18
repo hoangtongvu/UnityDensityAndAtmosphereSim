@@ -23,6 +23,11 @@ namespace Game.Mono.Player
 
         private Rigidbody grabbedRb;
 
+        void Awake()
+        {
+            this.cam = Camera.main;
+        }
+
         void Update()
         {
             HandleHoldDistance();
