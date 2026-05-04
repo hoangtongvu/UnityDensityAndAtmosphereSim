@@ -68,6 +68,7 @@ GameObject:
   - component: {fileID: 6531909563648923300}
   - component: {fileID: 6279700383802759727}
   - component: {fileID: 4230892276346496927}
+  - component: {fileID: 6507634914380871210}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -267,7 +268,22 @@ MonoBehaviour:
   inspectingObjectsSO: {fileID: 11400000, guid: b3bb11080be36d7438fbb4e7c4b369f3, type: 2}
   inspectingObjectId: {fileID: 6279700383802759727}
   fluidsSO: {fileID: 11400000, guid: b889a8f2dcaf3b54b81c552c2f3d2095, type: 2}
-  worldFluidId: {fileID: 0}
+  worldFluidId:
+    Value: 0
+--- !u!114 &6507634914380871210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068484196431490114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 012d19f619936b34b8690363da89f9d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Mono::Game.Mono.Test
+  depth: 0
+  pressure: 0
 --- !u!1 &1218081955079615220
 GameObject:
   m_ObjectHideFlags: 0
