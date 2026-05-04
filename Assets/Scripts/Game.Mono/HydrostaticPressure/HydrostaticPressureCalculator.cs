@@ -17,7 +17,7 @@ namespace Game.Mono.HydrostaticPressure
 
         [Inject] private FluidsSO fluidsSO;
         [Inject] private WorldFluidId worldFluidId;
-        private ISubscription fluidChangedMessageSub;
+        private ISubscription changeFluidMessageSub;
 
         private const float atmospherePressure = 101325; // Pascal
         private float fluidDensity; //kg/m^3
@@ -31,13 +31,13 @@ namespace Game.Mono.HydrostaticPressure
 
         private void OnEnable()
         {
-            fluidChangedMessageSub = GameplayMessenger.MessageSubscriber
-                .Subscribe<FluidKindChangedMessage>(message => SetFluidDensity(message.FluidId));
+            changeFluidMessageSub = GameplayMessenger.MessageSubscriber
+                .Subscribe<ChangeFluidKindMessage>(message => SetFluidDensity(message.FluidId));
         }
 
         private void OnDisable()
         {
-            fluidChangedMessageSub.Dispose();
+            changeFluidMessageSub.Dispose();
         }
 
         private void SetFluidDensity(WorldFluidId id)

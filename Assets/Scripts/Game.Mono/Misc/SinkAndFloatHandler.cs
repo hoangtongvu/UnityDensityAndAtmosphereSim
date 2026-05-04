@@ -11,7 +11,7 @@ namespace Game.Mono
 {
     public class SinkAndFloatHandler : SaiMonoBehaviour
     {
-        private ISubscription fluidChangedSubscription;
+        private ISubscription changeFluidMessageSub;
         public FloatersHolder floatersHolder;
         public InspectingObjectsSO inspectingObjectsSO;
         public InspectingObjectIdHolder inspectingObjectId;
@@ -28,27 +28,28 @@ namespace Game.Mono
 
         private void Start()
         {
-            this.InitValues();
+            this.InitValues(worldFluidId);
         }
 
         private void OnEnable()
         {
-            this.fluidChangedSubscription = GameplayMessenger.MessageSubscriber
-                .Subscribe<FluidKindChangedMessage>(_ => this.InitValues());
+            this.changeFluidMessageSub = GameplayMessenger.MessageSubscriber
+                .Subscribe<ChangeFluidKindMessage>(message => this.InitValues(message.FluidId));
         }
 
         private void OnDisable()
         {
-            this.fluidChangedSubscription.Dispose();
+            this.changeFluidMessageSub.Dispose();
         }
 
-        private void InitValues()
+        private void InitValues(WorldFluidId fluidId)
         {
             var objectData = this.inspectingObjectsSO.Value[this.inspectingObjectId.Value];
-            var fluidData = this.fluidsSO.Value[this.worldFluidId.Value];
+            var fluidData = this.fluidsSO.Value[fluidId.Value];
 
             if (objectData.Density < fluidData.Density)
             {
+                this.floatersHolder.SetDisplacementAmt(1f);
                 float submergedVolume = objectData.Weight / fluidData.Density;
                 float submergedHeight = objectData.GetSubmergedHeight(submergedVolume, 0.01f, 50);
                 this.floatersHolder.SetSubmergedHeight(submergedHeight * 2);

@@ -1,0 +1,137 @@
+/* ── Palette ─────────────────────────────────────────── */
+:root {
+    --col-bg:           #0f1117;
+    --col-surface:      #181c26;
+    --col-surface-hover:#1e2435;
+    --col-border:       #2a3048;
+    --col-accent:       #4fc3f7;
+    --col-accent-dim:   #1a3a4a;
+    --col-text-primary: #e8eaf0;
+    --col-text-muted:   #6b7594;
+    --col-divider:      #252c40;
+}
+
+/* ── Root panel ──────────────────────────────────────── */
+.fluids-root {
+    background-color: var(--col-bg);
+    border-color: var(--col-border);
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 16px;
+    width: 280px;
+    min-height: 120px;
+    max-height: 480px;
+    flex-direction: column;
+}
+
+.panel-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--col-accent);
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+    padding-left: 2px;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--col-divider);
+    margin-bottom: 10px;
+}
+
+/* ── Scroll view ─────────────────────────────────────── */
+.fluids-scroll {
+    flex-grow: 1;
+}
+
+.fluids-scroll > #unity-content-container {
+    flex-direction: column;
+    padding-right: 4px;
+}
+
+/* ── Individual fluid item ───────────────────────────── */
+.fluid-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    background-color: var(--col-surface);
+    border-color: var(--col-border);
+    border-width: 1px;
+    transition-property: background-color, border-color;
+    transition-duration: 0.12s;
+    cursor: link;
+}
+
+.fluid-item:hover {
+    background-color: var(--col-surface-hover);
+    border-color: var(--col-accent);
+}
+
+.fluid-item:active {
+    background-color: var(--col-accent-dim);
+}
+
+/* Sprite / icon placeholder */
+.fluid-sprite {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: var(--col-accent-dim);
+    border-color: var(--col-accent);
+    border-width: 1px;
+    flex-shrink: 0;
+    /* tint indicator strip on the left edge */
+    margin-right: 12px;
+}
+
+.fluid-name {
+    font-size: 13px;
+    color: var(--col-text-primary);
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ── Tooltip ─────────────────────────────────────────── */
+.fluid-tooltip {
+    position: absolute;
+    background-color: #0c0f19;
+    border-color: var(--col-accent);
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 10px 14px;
+    min-width: 160px;
+}
+
+.fluid-tooltip.hidden {
+    display: none;
+}
+
+.tooltip-name {
+    font-size: 12px;
+    color: var(--col-accent);
+    -unity-font-style: bold;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.tooltip-row {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.tooltip-key {
+    font-size: 11px;
+    color: var(--col-text-muted);
+    margin-right: 12px;
+}
+
+.tooltip-value {
+    font-size: 11px;
+    color: var(--col-text-primary);
+    -unity-font-style: bold;
+}

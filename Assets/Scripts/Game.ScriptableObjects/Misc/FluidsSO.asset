@@ -27,11 +27,39 @@ MonoBehaviour:
       valueArray: []
       valueList: []
       wrapType: 4
+    - value: 1
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
     _wrapTypeKey: 4
     _saintsValues:
     - value:
         Name: Water
         Density: 1000
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Acid
+        Density: 10000
       valueField:
         propertyType: 0
         longValue: 0

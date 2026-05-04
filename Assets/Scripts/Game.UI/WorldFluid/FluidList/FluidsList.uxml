@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Game.UI/WorldFluid/FluidList/FluidsList.uss?fileID=7433441132597879392&amp;guid=a7f43a7f752c4524c822e867a2281fd3&amp;type=3#FluidsList"/>
+    <ui:VisualElement name="fluids-root" enabled="true" class="fluids-root" style="opacity: 1;">
+        <ui:Label name="title-label" text="FLUIDS" class="panel-title"/>
+        <ui:VisualElement name="divider" class="divider"/>
+        <ui:ScrollView name="fluids-scroll" mode="Vertical" class="fluids-scroll"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="fluid-tooltip" class="fluid-tooltip hidden">
+        <ui:Label name="tooltip-name" text="Fluid Name" class="tooltip-name"/>
+        <ui:VisualElement class="tooltip-row">
+            <ui:Label text="Density" class="tooltip-key"/>
+            <ui:Label name="tooltip-density" text="—" class="tooltip-value"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
