@@ -2,7 +2,9 @@ using Game.Common;
 using Game.Domain;
 using Game.Domain.PubSub.Messengers;
 using Game.Domain.Utilities;
+using Game.Domain.WorldFluid;
 using Game.ScriptableObjects;
+using Reflex.Attributes;
 using ZBase.Foundation.PubSub;
 
 namespace Game.Mono
@@ -14,15 +16,14 @@ namespace Game.Mono
         public InspectingObjectsSO inspectingObjectsSO;
         public InspectingObjectIdHolder inspectingObjectId;
 
-        public FluidsSO fluidsSO;
-        public WorldFluidIdHolder worldFluidId;
+        [Inject] public FluidsSO fluidsSO;
+        [Inject] public WorldFluidId worldFluidId;
 
         protected override void LoadComponents()
         {
             base.LoadComponents();
             this.LoadComponentInCtrl(out this.floatersHolder);
             this.LoadComponentInCtrl(out this.inspectingObjectId);
-            this.FindAnyObjectByType(out this.worldFluidId);
         }
 
         private void Start()
