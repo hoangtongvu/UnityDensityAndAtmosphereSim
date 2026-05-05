@@ -1,4 +1,5 @@
 using Game.Common;
+using Game.Domain;
 using Game.Domain.InspectingObject;
 using Game.Domain.PubSub.Messengers;
 using Game.Mono.Player;
@@ -37,6 +38,7 @@ namespace Game.Mono.InspectingObject
             var spawnPos = this.playerCtrl.transform.position
                 + this.playerCtrl.transform.TransformDirection(this.spawnOffset);
             var newObject = Instantiate(objectData.Prefab, spawnPos, Quaternion.identity, transform);
+            newObject.GetComponent<InspectingObjectIdHolder>().Value = message.ObjectId;
 
             GameObjectInjector.InjectRecursive(newObject, gameObject.scene.GetSceneContainer());
         }
