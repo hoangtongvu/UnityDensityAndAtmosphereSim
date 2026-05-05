@@ -71,7 +71,7 @@ namespace Game.Mono.Player
         {
             if (this.grabbedRb)
             {
-                laser.SetPosition(0, transform.position + laserStartPosOffset);
+                laser.SetPosition(0, transform.TransformPoint(laserStartPosOffset));
                 laser.SetPosition(1, grabbedRb.transform.position);
             }
             else
