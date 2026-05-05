@@ -14,11 +14,11 @@ namespace Game.Mono
     {
         private ISubscription changeFluidMessageSub;
         public FloatersHolder floatersHolder;
-        public InspectingObjectsSO inspectingObjectsSO;
         public InspectingObjectIdHolder inspectingObjectId;
 
-        [Inject] public FluidsSO fluidsSO;
-        [Inject] public WorldFluidId worldFluidId;
+        [Inject] private FluidsSO fluidsSO;
+        [Inject] private InspectingObjectsSO inspectingObjectsSO;
+        [Inject] private WorldFluidId worldFluidId;
 
         protected override void LoadComponents()
         {

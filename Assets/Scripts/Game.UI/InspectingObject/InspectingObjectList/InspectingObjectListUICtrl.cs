@@ -146,7 +146,6 @@ namespace Game.UI.InspectingObject
 
         private void OnFluidClicked(int id, InspectingObjectData data)
         {
-            UnityEngine.Debug.Log("Clicked");
             GameplayMessenger.MessagePublisher
                 .Publish(new SpawnInspectingObjectMessage(id));
         }
