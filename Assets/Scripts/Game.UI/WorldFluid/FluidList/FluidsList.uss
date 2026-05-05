@@ -1,14 +1,14 @@
 /* ── Palette ─────────────────────────────────────────── */
 :root {
-    --col-bg:           #0f1117;
-    --col-surface:      #181c26;
-    --col-surface-hover:#1e2435;
-    --col-border:       #2a3048;
-    --col-accent:       #4fc3f7;
-    --col-accent-dim:   #1a3a4a;
-    --col-text-primary: #e8eaf0;
-    --col-text-muted:   #6b7594;
-    --col-divider:      #252c40;
+    --col-bg:           rgba(255, 255, 255, 0.2);
+    --col-surface:      rgba(255, 255, 255, 0.2);
+    --col-surface-hover:rgba(255, 255, 255, 0.3);
+    --col-border:       rgba(80, 140, 210, 0.22);
+    --col-accent:       #1a6bbf;
+    --col-accent-dim:   rgba(26, 107, 191, 0.10);
+    --col-text-primary: #1a2540;
+    --col-text-muted:   #5a7099;
+    --col-divider:      rgba(80, 140, 210, 0.18);
 }
 
 /* ── Root panel ──────────────────────────────────────── */
@@ -16,14 +16,16 @@
     background-color: var(--col-bg);
     border-color: var(--col-border);
     border-width: 1px;
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: 3px;
+    padding: 10px;
     width: 280px;
     min-height: 120px;
     max-height: 480px;
     flex-direction: column;
+    margin-left: 16px;
+    margin-top: 16px;
 }
-
+/* ── Panel title ─────────────────────────────────────── */
 .panel-title {
     font-size: 11px;
     letter-spacing: 3px;
@@ -78,11 +80,10 @@
     width: 36px;
     height: 36px;
     border-radius: 6px;
-    background-color: var(--col-accent-dim);
-    border-color: var(--col-accent);
+    background-color: rgba(26, 107, 191, 0.12);
+    border-color: rgba(26, 107, 191, 0.30);
     border-width: 1px;
     flex-shrink: 0;
-    /* tint indicator strip on the left edge */
     margin-right: 12px;
 }
 
@@ -98,8 +99,8 @@
 /* ── Tooltip ─────────────────────────────────────────── */
 .fluid-tooltip {
     position: absolute;
-    background-color: #0c0f19;
-    border-color: var(--col-accent);
+    background-color: rgba(255, 255, 255, 0.82);
+    border-color: rgba(26, 107, 191, 0.35);
     border-width: 1px;
     border-radius: 6px;
     padding: 10px 14px;

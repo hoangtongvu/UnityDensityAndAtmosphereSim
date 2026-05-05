@@ -17,30 +17,23 @@
 
 /* --- Variables (root) --- */
 .root {
-    --color-bg:           #1a1d23;
-    --color-surface:      #21252e;
-    --color-surface-alt:  #191c23;
-    --color-border:       #2e3340;
-    --color-accent:       #4a9eff;
-    --color-text-primary: #d4dae8;
-    --color-text-label:   #7a8499;
-    --color-text-unit:    #4a9eff;
+    --color-bg:           rgba(255, 255, 255, 0.1);
+    --color-surface:      rgba(255, 255, 255, 0.3);
+    --color-surface-alt:  rgba(255, 255, 255, 0.25);
+    --color-border:       rgba(0, 0, 0, 0.08);
+    --color-accent:       #0070e0;
+    --color-text-primary: #1a1f2e;
+    --color-text-label:   #6b7280;
+    --color-text-unit:    #0070e0;
 
     background-color: var(--color-bg);
     padding: 0;
     min-width: 150px;
     max-width: 200px;
-    border-radius: 6px;
+    border-radius: 3px;
     overflow: hidden;
     border-width: 1px;
     border-color: var(--color-border);
-}
-
-/* --- Header --- */
-.header {
-    background-color: var(--color-surface);
-    padding: 12px 16px 0 16px;
-    border-bottom-width: 0;
 }
 
 .panel-title {
@@ -77,8 +70,8 @@
 /* --- Section Group --- */
 .section-group {
     background-color: var(--color-surface-alt);
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 3px;
+    margin-right: 3px;
     margin-bottom: 4px;
     border-radius: 4px;
     border-width: 1px;
@@ -102,7 +95,7 @@
 
 .field-row--name {
     background-color: var(--color-surface);
-    margin: 10px 12px 2px 12px;
+    margin: 3px 3px 2px 4px;
     border-radius: 4px;
     border-width: 1px;
     border-color: var(--color-border);
