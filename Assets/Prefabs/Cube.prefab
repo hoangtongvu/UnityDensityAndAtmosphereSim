@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2390845335555225427}
   - component: {fileID: 7851694691654343644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floater (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 6279700383802759727}
   - component: {fileID: 4230892276346496927}
   - component: {fileID: 6507634914380871210}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4329370069712215922}
   - component: {fileID: 6436569643101831920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floater (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5907672648013364742}
   - component: {fileID: 5724228593565921025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floater (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4846198598988167740}
   - component: {fileID: 6795514429246421268}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floater (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946346901615681367}
   - component: {fileID: 7022736815228146991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floater (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 241301118906791963}
   - component: {fileID: 8261597683624856431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floater (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8408492694485178794}
   - component: {fileID: 2317323587484907457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floater (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5603019952495774287}
   - component: {fileID: 8100393724917549044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floater (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

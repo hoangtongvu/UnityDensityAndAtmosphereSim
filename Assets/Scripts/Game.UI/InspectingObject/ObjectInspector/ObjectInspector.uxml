@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Game.UI/InspectingObject/ObjectInspector/ObjectInspector.uss?fileID=7433441132597879392&amp;guid=4731bb4af6d396e47b8f66696c900aa3&amp;type=3#ObjectInspector"/>
+    <ui:VisualElement class="canvas">
+        <ui:VisualElement name="root" class="root">
+            <ui:VisualElement class="field-row field-row--name">
+                <ui:Label name="field-name" text="—" class="field-value field-value--text" style="-unity-text-align: middle-center;"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="section-group">
+                <ui:VisualElement class="field-row">
+                    <ui:Label text="Density" class="field-label"/>
+                    <ui:VisualElement class="field-value-row">
+                        <ui:Label name="field-density" text="—" class="field-value"/>
+                        <ui:Label text="kg/m³" class="field-unit"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="field-row">
+                    <ui:Label text="Volume" class="field-label"/>
+                    <ui:VisualElement class="field-value-row">
+                        <ui:Label name="field-volume" text="—" class="field-value"/>
+                        <ui:Label text="m³" class="field-unit"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="field-row">
+                    <ui:Label text="Weight" class="field-label"/>
+                    <ui:VisualElement class="field-value-row">
+                        <ui:Label name="field-weight" text="—" class="field-value"/>
+                        <ui:Label text="kg" class="field-unit"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="section-group">
+                <ui:VisualElement class="field-row">
+                    <ui:Label text="Depth" class="field-label"/>
+                    <ui:VisualElement class="field-value-row">
+                        <ui:Label name="field-depth" text="—" class="field-value"/>
+                        <ui:Label text="m" class="field-unit"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="field-row">
+                    <ui:Label text="Pressure" class="field-label"/>
+                    <ui:VisualElement class="field-value-row">
+                        <ui:Label name="field-pressure" text="—" class="field-value"/>
+                        <ui:Label text="Pa" class="field-unit"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,182 @@
+/* ============================================
+   FluidInspector.uss
+   Dark industrial theme for physics data panel
+   ============================================ */
+
+/* Full-screen anchor layer */
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: flex-end;    /* right */
+    justify-content: flex-start; /* top */
+    padding: 16px;
+}
+
+/* --- Variables (root) --- */
+.root {
+    --color-bg:           #1a1d23;
+    --color-surface:      #21252e;
+    --color-surface-alt:  #191c23;
+    --color-border:       #2e3340;
+    --color-accent:       #4a9eff;
+    --color-text-primary: #d4dae8;
+    --color-text-label:   #7a8499;
+    --color-text-unit:    #4a9eff;
+
+    background-color: var(--color-bg);
+    padding: 0;
+    min-width: 150px;
+    max-width: 200px;
+    border-radius: 6px;
+    overflow: hidden;
+    border-width: 1px;
+    border-color: var(--color-border);
+}
+
+/* --- Header --- */
+.header {
+    background-color: var(--color-surface);
+    padding: 12px 16px 0 16px;
+    border-bottom-width: 0;
+}
+
+.panel-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--color-accent);
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+.header-divider {
+    height: 2px;
+    background-color: var(--color-accent);
+    margin-left: -16px;
+    margin-right: -16px;
+    opacity: 0.6;
+}
+
+/* --- Section Labels --- */
+.section-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--color-text-label);
+    -unity-font-style: bold;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 4px;
+    border-bottom-width: 1px;
+    border-color: var(--color-border);
+}
+
+/* --- Section Group --- */
+.section-group {
+    background-color: var(--color-surface-alt);
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--color-border);
+    overflow: hidden;
+}
+
+/* --- Field Rows --- */
+.field-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 12px;
+    border-bottom-width: 1px;
+    border-color: var(--color-border);
+}
+
+.field-row:last-child {
+    border-bottom-width: 0;
+}
+
+.field-row--name {
+    background-color: var(--color-surface);
+    margin: 10px 12px 2px 12px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--color-border);
+    padding: 8px 12px;
+}
+
+/* --- Field Labels (left side) --- */
+.field-label {
+    font-size: 11px;
+    color: var(--color-text-label);
+    width: 80px;
+    flex-shrink: 0;
+    -unity-font-style: normal;
+}
+
+/* --- Value Row (value + unit) --- */
+.field-value-row {
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+/* --- Value Labels (right side) --- */
+.field-value {
+    flex-grow: 1;
+    min-width: 80px;
+    max-width: 140px;
+    font-size: 12px;
+    color: var(--color-text-primary);
+    -unity-text-align: middle-right;
+    padding: 0;
+    margin: 0;
+}
+
+.field-value--text {
+    max-width: 180px;
+}
+
+/* --- Unit Labels --- */
+.field-unit {
+    font-size: 10px;
+    color: var(--color-text-unit);
+    margin-left: 5px;
+    width: 30px;
+    -unity-text-align: middle-left;
+    opacity: 0.8;
+}
+
+/* --- Base transition setup --- */
+.anim {
+    transition-property: opacity, scale, translate;
+    transition-duration: 0.25s, 0.25s, 0.25s;
+    transition-timing-function: ease-out, ease-out, ease-out;
+}
+
+/* --- Visible state (call this to show) --- */
+.anim--visible {
+    opacity: 1;
+    scale: 1;
+    display: flex;
+}
+
+/* --- Hidden state (call this to hide) --- */
+.anim--hidden {
+    opacity: 0;
+    scale: 0.95;
+    display: none;
+}
+
+/* --- Fade only --- */
+.anim--fade-visible { opacity: 1; }
+.anim--fade-hidden  { opacity: 0; }
+
+/* --- Slide from bottom --- */
+.anim--slide-visible { opacity: 1; translate: 0 0; }
+.anim--slide-hidden  { opacity: 0; translate: 0 20px; }
