@@ -40,11 +40,54 @@ MonoBehaviour:
       valueArray: []
       valueList: []
       wrapType: 4
+    - value: 2
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: 3
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: 4
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
     _wrapTypeKey: 4
     _saintsValues:
     - value:
         Name: Water
         Density: 1000
+        FoamColor: {r: 0.9921569, g: 0.9607844, b: 0.8196079, a: 0.81960785}
+        RefractionColor: {r: 0.53333336, g: 0.86274517, b: 0.9176471, a: 1}
+        RefractionAbsorptionDistance: 10
+        ScatteringColor: {r: 0.20784315, g: 0.45882356, b: 0.65882355, a: 1}
       valueField:
         propertyType: 0
         longValue: 0
@@ -58,8 +101,69 @@ MonoBehaviour:
       valueList: []
       wrapType: 4
     - value:
-        Name: Acid
-        Density: 10000
+        Name: Oil
+        Density: 920
+        FoamColor: {r: 1, g: 0.972549, b: 0.88235295, a: 0}
+        RefractionColor: {r: 1, g: 0.7019608, b: 0, a: 0}
+        RefractionAbsorptionDistance: 0.5
+        ScatteringColor: {r: 1, g: 0.43529412, b: 0, a: 0}
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Mercury
+        Density: 13534
+        FoamColor: {r: 0.8117647, g: 0.84705883, b: 0.8627451, a: 0}
+        RefractionColor: {r: 0.5647059, g: 0.6431373, b: 0.68235296, a: 0}
+        RefractionAbsorptionDistance: 1
+        ScatteringColor: {r: 0.47058824, g: 0.5647059, b: 0.6117647, a: 0}
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Lava
+        Density: 3100
+        FoamColor: {r: 1, g: 0.8, b: 0.7372549, a: 0}
+        RefractionColor: {r: 1, g: 0.34117648, b: 0.13333334, a: 0}
+        RefractionAbsorptionDistance: 0
+        ScatteringColor: {r: 0.7490196, g: 0.21176471, b: 0.047058824, a: 0}
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Slime
+        Density: 1200
+        FoamColor: {r: 0.9098039, g: 0.9607843, b: 0.9137255, a: 0}
+        RefractionColor: {r: 0.4, g: 0.73333335, b: 0.41568628, a: 0}
+        RefractionAbsorptionDistance: 0.5
+        ScatteringColor: {r: 0.18039216, g: 0.49019608, b: 0.19607843, a: 0}
       valueField:
         propertyType: 0
         longValue: 0

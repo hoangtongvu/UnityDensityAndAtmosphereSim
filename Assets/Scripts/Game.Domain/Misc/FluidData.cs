@@ -1,4 +1,5 @@
 using SaintsField;
+using UnityEngine;
 
 namespace Game.Domain;
 
@@ -7,5 +8,9 @@ public class FluidData
 {
     [Required] public string Name;
     [Required] public float Density;
-    // Colors
+
+    public Color FoamColor;
+    [ColorUsage(false)] public Color RefractionColor;
+    public float RefractionAbsorptionDistance;
+    [ColorUsage(false)] public Color ScatteringColor;
 }

@@ -25,12 +25,23 @@ namespace Game.Mono.WorldFluid
         private void OnEnable()
         {
             this.changeFluidKindMessageSub = GameplayMessenger.MessageSubscriber
-                .Subscribe<ChangeFluidKindMessage>(message => this.worldFluidId.Value = message.FluidId.Value);
+                .Subscribe<ChangeFluidKindMessage>(ChangeFluid);
         }
 
         private void OnDisable()
         {
             this.changeFluidKindMessageSub.Dispose();
+        }
+
+        private void ChangeFluid(ChangeFluidKindMessage message)
+        {
+            this.worldFluidId.Value = message.FluidId.Value;
+            var fluidData = this.fluidsSO.Value[this.worldFluidId.Value];
+
+            this.waterSurface.foamColor = fluidData.FoamColor;
+            this.waterSurface.refractionColor = fluidData.RefractionColor.linear;
+            this.waterSurface.absorptionDistance = fluidData.RefractionAbsorptionDistance;
+            this.waterSurface.scatteringColor = fluidData.ScatteringColor.linear;
         }
 
         public void InstallBindings(ContainerBuilder builder)
