@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/Scripts/Game.UI/InspectingObject/ObjectInspector/ObjectInspector.uss?fileID=7433441132597879392&amp;guid=4731bb4af6d396e47b8f66696c900aa3&amp;type=3#ObjectInspector"/>
-    <ui:VisualElement class="canvas">
+    <ui:VisualElement picking-mode="Ignore" class="canvas">
         <ui:VisualElement name="root" class="root">
             <ui:VisualElement class="field-row field-row--name">
                 <ui:Label name="field-name" text="—" class="field-value field-value--text" style="-unity-text-align: middle-center;"/>
