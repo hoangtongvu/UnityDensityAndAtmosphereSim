@@ -80,7 +80,6 @@
     width: 36px;
     height: 36px;
     border-radius: 6px;
-    background-color: rgba(26, 107, 191, 0.12);
     border-color: rgba(26, 107, 191, 0.30);
     border-width: 1px;
     flex-shrink: 0;

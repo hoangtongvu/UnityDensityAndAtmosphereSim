@@ -13,7 +13,6 @@ namespace MyNamespace
     public class FluidsListUICtrl : MonoBehaviour
     {
         [SerializeField] private UIDocument _document;
-        [SerializeField] private Sprite _placeholderSprite;
         [Inject] private FluidsSO _fluidsSO;
 
         private VisualElement _scrollContent;
@@ -87,8 +86,11 @@ namespace MyNamespace
             // ── Sprite (placeholder image element) ───────────────────────────────
             var sprite = new VisualElement();
             sprite.AddToClassList("fluid-sprite");
-            if (_placeholderSprite != null)
-                sprite.style.backgroundImage = new StyleBackground(_placeholderSprite);
+
+            var color = data.RefractionColor.linear;
+            color.a = 1f;
+            sprite.style.backgroundColor = new StyleColor(color);
+
             item.Add(sprite);
 
             // ── Name label ───────────────────────────────────────────────────────
