@@ -21,6 +21,8 @@ namespace Game.UI.InspectingObject
         private VisualElement _tooltip;
         private Label _tooltipName;
         private Label _tooltipDensity;
+        private Label _tooltipVolume;
+        private Label _tooltipWeight;
 
         private void Start()
         {
@@ -36,6 +38,8 @@ namespace Game.UI.InspectingObject
             _tooltip = root.Q<VisualElement>("item-tooltip");
             _tooltipName = root.Q<Label>("tooltip-name");
             _tooltipDensity = root.Q<Label>("tooltip-density");
+            _tooltipVolume = root.Q<Label>("tooltip-volume");
+            _tooltipWeight = root.Q<Label>("tooltip-weight");
 
             BuildList();
         }
@@ -126,6 +130,8 @@ namespace Game.UI.InspectingObject
         {
             _tooltipName.text = data.Name;
             _tooltipDensity.text = $"{data.Density:F2} kg/m³";
+            _tooltipVolume.text = $"{data.MeshVolume:F2} m³";
+            _tooltipWeight.text = $"{data.Weight:F2} kg";
             // Add more fields here as FluidData grows, following the same pattern.
         }
 
