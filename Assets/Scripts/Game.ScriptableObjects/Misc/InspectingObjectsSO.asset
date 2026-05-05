@@ -27,16 +27,280 @@ MonoBehaviour:
       valueArray: []
       valueList: []
       wrapType: 4
+    - value: 1
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: 2
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: 3
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: 4
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: 5
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: 6
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: 7
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: 8
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
     _wrapTypeKey: 4
     _saintsValues:
     - value:
-        Name: Box
+        Name: Sample Cube
         Prefab: {fileID: 1068484196431490114, guid: 12c3a8d399b6eb84184fd57ee944747c, type: 3}
         Density: 700
         LowerHullScanStartY: -0.5
         LowerHullScanEndY: 0.5
         MeshVolume: 0.9999999
         Weight: 699.99994
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: 1866159541706293344
+        IsVRef: 1
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Wooden Box
+        Prefab: {fileID: 6127591597189157945, guid: 393d19d5be99c964ab17270328f033ca, type: 3}
+        Density: 420
+        LowerHullScanStartY: -0.05
+        LowerHullScanEndY: 0.3
+        MeshVolume: 0.10477088
+        Weight: 44.00377
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: 1866159541706293344
+        IsVRef: 1
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Wooden Coil
+        Prefab: {fileID: 865192527234132985, guid: 035484cd1bcad3249a3da40090b58eef, type: 3}
+        Density: 500
+        LowerHullScanStartY: 0
+        LowerHullScanEndY: 1
+        MeshVolume: 0.879637
+        Weight: 439.8185
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: 1866159541706293344
+        IsVRef: 1
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Rocket
+        Prefab: {fileID: 7401242386263467967, guid: 881de43ad2a90e5499ae01d02552bf18, type: 3}
+        Density: 7874
+        LowerHullScanStartY: 0
+        LowerHullScanEndY: 4.5
+        MeshVolume: 5.7175474
+        Weight: 45019.97
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: 1866159541706293344
+        IsVRef: 1
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Brick Block
+        Prefab: {fileID: 4581180526820431244, guid: 683d3186637cf644e94052e2b2c25dab, type: 3}
+        Density: 2200
+        LowerHullScanStartY: -1
+        LowerHullScanEndY: 1
+        MeshVolume: 7.8765273
+        Weight: 17328.36
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: 1866159541706293344
+        IsVRef: 1
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Glass Block
+        Prefab: {fileID: 7678177215138562250, guid: 41d3446fa76d78a41a3310a300f4bb88, type: 3}
+        Density: 2200
+        LowerHullScanStartY: -1
+        LowerHullScanEndY: 1
+        MeshVolume: 13.41056
+        Weight: 29503.23
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: 1866159541706293344
+        IsVRef: 1
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Aluminum Block
+        Prefab: {fileID: 4847874828264746978, guid: a2e574e2e8f84904994bac972d4d7268, type: 3}
+        Density: 2700
+        LowerHullScanStartY: -1
+        LowerHullScanEndY: 1
+        MeshVolume: 7.4588337
+        Weight: 20138.852
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: 1866159541706293344
+        IsVRef: 1
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Stone Block
+        Prefab: {fileID: 8405881731554176901, guid: fb67b8810ad045a43b3008df9d350af7, type: 3}
+        Density: 3000
+        LowerHullScanStartY: -1
+        LowerHullScanEndY: 1
+        MeshVolume: 7.5966797
+        Weight: 22790.04
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        V: {fileID: 0}
+        VRef:
+          rid: 1866159541706293344
+        IsVRef: 1
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value:
+        Name: Wooden Block
+        Prefab: {fileID: 7890483425537846783, guid: 5d7b2cd609e0c894c8e44bb03c753ee3, type: 3}
+        Density: 420
+        LowerHullScanStartY: -1
+        LowerHullScanEndY: 1
+        MeshVolume: 7.616959
+        Weight: 3199.1228
       valueField:
         propertyType: 0
         longValue: 0
