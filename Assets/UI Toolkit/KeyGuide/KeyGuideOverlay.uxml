@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/KeyGuide/KeyGuideOverlay.uss?fileID=7433441132597879392&amp;guid=0b07681ad412ba741bd9f262e693f089&amp;type=3#KeyGuideOverlay"/>
-    <ui:VisualElement name="root" class="overlay-root">
+    <ui:VisualElement name="root" picking-mode="Ignore" class="overlay-root">
         <ui:VisualElement name="key-guide-panel" class="key-guide-panel">
             <ui:VisualElement name="entry-interact" class="key-entry">
                 <ui:VisualElement class="panel-body">
