@@ -1,0 +1,66 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/KeyGuide/KeyGuideOverlay.uss?fileID=7433441132597879392&amp;guid=0b07681ad412ba741bd9f262e693f089&amp;type=3#KeyGuideOverlay"/>
+    <ui:VisualElement name="root" class="overlay-root">
+        <ui:VisualElement name="key-guide-panel" class="key-guide-panel">
+            <ui:VisualElement name="entry-interact" class="key-entry">
+                <ui:VisualElement class="panel-body">
+                    <ui:Label text="Fluids" class="key-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="key-cap-wrap">
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/keyboard/keyboard-solid/f1.png?fileID=2800000&amp;guid=63b5c8c59c02fae4babc0af4a1010dd2&amp;type=3#f1&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="entry-interact" class="key-entry">
+                <ui:VisualElement class="panel-body">
+                    <ui:Label text="Objects" class="key-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="key-cap-wrap">
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/keyboard/keyboard-solid/f2.png?fileID=2800000&amp;guid=eda0cf5d765bbd740b7c0d8c23f257e4&amp;type=3#f2&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="entry-interact" class="key-entry">
+                <ui:VisualElement class="panel-body">
+                    <ui:Label text="Grab" class="key-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="key-cap-wrap">
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/mouse/mouse-solid/mouse-left.png?fileID=2800000&amp;guid=bffdf8cbd8232a14c9e2eb0ebe93c6c4&amp;type=3#mouse-left&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="entry-interact" class="key-entry">
+                <ui:VisualElement class="panel-body">
+                    <ui:Label text="Shoot" class="key-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="key-cap-wrap">
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/mouse/mouse-solid/mouse-right.png?fileID=2800000&amp;guid=3c477db1ce513e54c828b3ceeb5caf46&amp;type=3#mouse-right&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="entry-interact" class="key-entry">
+                <ui:VisualElement class="panel-body">
+                    <ui:Label text="Fly" class="key-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="key-cap-wrap">
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/keyboard/keyboard-solid/space.png?fileID=2800000&amp;guid=0ed2882c805bc5441a0b4f0f5b3e2f6f&amp;type=3#space&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="entry-interact" class="key-entry">
+                <ui:VisualElement class="panel-body">
+                    <ui:Label text="Boost" class="key-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="key-cap-wrap">
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/keyboard/keyboard-solid/shift.png?fileID=2800000&amp;guid=185cf49fca2ff1f4c8fd8e3b993f700e&amp;type=3#shift&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="entry-interact" class="key-entry">
+                <ui:VisualElement class="panel-body">
+                    <ui:Label text="Move" class="key-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="key-cap-wrap" style="flex-direction: row;">
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/keyboard/keyboard-solid/w.png?fileID=2800000&amp;guid=c48a9e623f57a964bb290afc4c88ec5e&amp;type=3#w&quot;);"/>
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/keyboard/keyboard-solid/a.png?fileID=2800000&amp;guid=84336ead2bc884a4389f3d4e11093845&amp;type=3#a&quot;);"/>
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/keyboard/keyboard-solid/s.png?fileID=2800000&amp;guid=39c87eb429428fe49a2621871ade9193&amp;type=3#s&quot;);"/>
+                    <ui:VisualElement class="key-icon" style="background-image: url(&quot;project://database/Assets/GameInputControllerIconsFree/keyboard/keyboard-solid/d.png?fileID=2800000&amp;guid=f88a3bde663a377419f80eeae083d5b7&amp;type=3#d&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
