@@ -1,10 +1,13 @@
 using Game.Domain;
+using Game.Domain.PubSub.Messengers;
+using Game.Domain.WorldFluid;
 using Game.Mono.HydrostaticPressure;
 using Game.ScriptableObjects;
 using Game.UI.InspectingObject;
 using Reflex.Attributes;
 using UnityEngine;
 using UnityEngine.UIElements;
+using ZBase.Foundation.PubSub;
 
 namespace Game.Mono.Player
 {
@@ -18,8 +21,11 @@ namespace Game.Mono.Player
         private GameObject _currentObject;
         private HydrostaticPressureCalculator _currentHydrostaticPressureCalculator;
 
+        [Inject] private FluidsSO _fluidsSO;
+        [Inject] private WorldFluidId _worldFluidId;
         [Inject] private InspectingObjectsSO _inspectingObjectsSO;
         [Inject] private ObjectInspectorUICtrl _objectInspectorUI;
+        private ISubscription _changeFluidMessageSub;
 
         private void Awake()
         {
@@ -38,6 +44,28 @@ namespace Game.Mono.Player
                 else
                     inspectingObjectLayer = 1 << layerIndex;
             }
+        }
+
+        private void OnEnable()
+        {
+            _changeFluidMessageSub = GameplayMessenger.MessageSubscriber
+                .Subscribe<ChangeFluidKindMessage>(message =>
+                {
+                    if (!_currentObject) return;
+
+                    var root = _objectInspectorUI.UIDocument.rootVisualElement;
+                    var inspectingObjectId = _currentObject.GetComponent<InspectingObjectIdHolder>().Value;
+
+                    var fluidData = _fluidsSO.Value[_worldFluidId.Value];
+                    var objectData = _inspectingObjectsSO.Value[inspectingObjectId];
+
+                    root.Q<Label>("field-submerged-volume").text = $"{objectData.Density / fluidData.Density:F2}";
+                });
+        }
+
+        private void OnDisable()
+        {
+            _changeFluidMessageSub.Dispose();
         }
 
         private void FixedUpdate()
@@ -78,12 +106,15 @@ namespace Game.Mono.Player
             var inspectingObjectId = target.GetComponent<InspectingObjectIdHolder>().Value;
             _currentHydrostaticPressureCalculator = target.GetComponent<HydrostaticPressureCalculator>();
 
+            var fluidData = _fluidsSO.Value[_worldFluidId.Value];
             var objectData = _inspectingObjectsSO.Value[inspectingObjectId];
 
             root.Q<Label>("field-name").text = objectData.Name;
             root.Q<Label>("field-density").text = $"{objectData.Density:F2}";
             root.Q<Label>("field-volume").text = $"{objectData.MeshVolume:F2}";
             root.Q<Label>("field-weight").text = $"{objectData.Weight:F2}";
+            root.Q<Label>("field-submerged-volume").text =
+                $"{Mathf.Clamp(objectData.Density / fluidData.Density * 100, 0, 100):F2}";
 
             _objectInspectorUI.Show();
         }

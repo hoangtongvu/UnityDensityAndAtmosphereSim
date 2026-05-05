@@ -27,6 +27,13 @@
                         <ui:Label text="kg" class="field-unit"/>
                     </ui:VisualElement>
                 </ui:VisualElement>
+                <ui:VisualElement class="field-row">
+                    <ui:Label text="Submerged Volume" class="field-label"/>
+                    <ui:VisualElement class="field-value-row">
+                        <ui:Label name="field-submerged-volume" text="—" class="field-value"/>
+                        <ui:Label text="%" class="field-unit"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement class="section-group">
                 <ui:VisualElement class="field-row">
