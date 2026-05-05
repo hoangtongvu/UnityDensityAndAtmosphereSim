@@ -1,8 +1,10 @@
 using Game.Domain;
 using Game.Domain.InspectingObject;
+using Game.Domain.Player;
 using Game.Domain.PubSub.Messengers;
 using Game.ScriptableObjects;
 using Reflex.Attributes;
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.UIElements;
 using ZBase.Foundation.PubSub;
@@ -46,7 +48,18 @@ namespace Game.UI.InspectingObject
                 var root = _document.rootVisualElement;
                 root.visible = !root.visible;
 
-                UnityEngine.Cursor.lockState = root.visible ? CursorLockMode.None : CursorLockMode.Locked;
+                var publisher = GameplayMessenger.MessagePublisher;
+
+                if (root.visible)
+                {
+                    publisher.Publish(new SetEnabledMouseLookMessage(false));
+                    publisher.Publish(new SetLockCursorMessage(CursorLockMode.None));
+                }
+                else
+                {
+                    publisher.Publish(new SetEnabledMouseLookMessage(true));
+                    publisher.Publish(new SetLockCursorMessage(CursorLockMode.Locked));
+                }
             }
         }
 

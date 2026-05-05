@@ -1,4 +1,5 @@
 using Game.Domain;
+using Game.Domain.Player;
 using Game.Domain.PubSub.Messengers;
 using Game.Domain.WorldFluid;
 using Game.ScriptableObjects;
@@ -46,7 +47,18 @@ namespace MyNamespace
                 var root = _document.rootVisualElement;
                 root.visible = !root.visible;
 
-                UnityEngine.Cursor.lockState = root.visible ? CursorLockMode.None : CursorLockMode.Locked;
+                var publisher = GameplayMessenger.MessagePublisher;
+
+                if (root.visible)
+                {
+                    publisher.Publish(new SetEnabledMouseLookMessage(false));
+                    publisher.Publish(new SetLockCursorMessage(CursorLockMode.None));
+                }
+                else
+                {
+                    publisher.Publish(new SetEnabledMouseLookMessage(true));
+                    publisher.Publish(new SetLockCursorMessage(CursorLockMode.Locked));
+                }
             }
         }
 
