@@ -1,9 +1,11 @@
+using Reflex.Attributes;
 using UnityEngine;
 using UnityEngine.Rendering.HighDefinition;
 
 namespace Game.Mono
 {
-    public class Floater : MonoBehaviour
+    [SourceGeneratorInjectable]
+    public partial class Floater : MonoBehaviour
     {
         // Rigidbody component of the floating object
         public Rigidbody rb;
@@ -18,7 +20,7 @@ namespace Game.Mono
         // Angular drag coefficient in water
         public float waterAngutarDrag;
         // Reference to the water surface management component
-        public WaterSurface water;
+        [Inject] public WaterSurface water;
         // Holds parameters for searching the water surface
         WaterSearchParameters Search;
         // Stores result of water surface search

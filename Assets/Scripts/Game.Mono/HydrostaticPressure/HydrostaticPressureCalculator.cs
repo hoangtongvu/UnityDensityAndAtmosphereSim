@@ -8,7 +8,8 @@ using ZBase.Foundation.PubSub;
 
 namespace Game.Mono.HydrostaticPressure
 {
-    public class HydrostaticPressureCalculator : MonoBehaviour
+    [SourceGeneratorInjectable]
+    public partial class HydrostaticPressureCalculator : MonoBehaviour
     {
         [Inject] private WaterSurface water;
 

@@ -267,7 +267,7 @@ MonoBehaviour:
   floatersHolder: {fileID: 6531909563648923300}
   inspectingObjectsSO: {fileID: 11400000, guid: b3bb11080be36d7438fbb4e7c4b369f3, type: 2}
   inspectingObjectId: {fileID: 6279700383802759727}
-  fluidsSO: {fileID: 11400000, guid: b889a8f2dcaf3b54b81c552c2f3d2095, type: 2}
+  fluidsSO: {fileID: 0}
   worldFluidId:
     Value: 0
 --- !u!114 &6507634914380871210

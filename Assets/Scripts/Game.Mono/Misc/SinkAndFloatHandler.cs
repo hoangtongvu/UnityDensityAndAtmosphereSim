@@ -9,7 +9,8 @@ using ZBase.Foundation.PubSub;
 
 namespace Game.Mono
 {
-    public class SinkAndFloatHandler : SaiMonoBehaviour
+    [SourceGeneratorInjectable]
+    public partial class SinkAndFloatHandler : SaiMonoBehaviour
     {
         private ISubscription changeFluidMessageSub;
         public FloatersHolder floatersHolder;
